@@ -1250,13 +1250,50 @@
 .info-list ul li {
 	display: inline-block;
 	vertical-align: top;
-	width: 48%;
+	width: 56%;
 	margin: 0 0 6px 0;
 }
 
 .info-list ul li strong {
 	font-weight: 400;
 	color: #4bffa5;
+}
+
+.tech-stack ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-stack li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.tech-stack li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.tech-stack span {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 
